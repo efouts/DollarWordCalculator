@@ -1,17 +1,20 @@
 body {
 	background-color:#485A75;
-
+  font-family: 'Sansita One', cursive;
+  font-size: 16px;
 }
 
 h1 {
-	font-family: 'Sansita One', cursive;
 	font-size: 72px;
 	color: #8AB50D;
 	text-align: center;
 }
 
+h3 { 
+  font-size: 36px;
+}
+
 input {
-	font-family: 'Sansita One', cursive;
 	font-size: 54px;
 	text-align: center;
 
@@ -22,10 +25,16 @@ input {
 }
 
 .word-value {
-	margin-top: 250px;
+	margin-top: 50px;
 	vertical-align: bottom;
-	font-family: 'Sansita One', cursive;
 	font-size: 150px;
 	text-align: center;
+}
 
+.dollar { 
+  color: #8AB50D;
+}
+
+ul.dollar-words {
+  list-style-type: none;
 }

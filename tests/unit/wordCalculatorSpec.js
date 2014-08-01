@@ -7,21 +7,24 @@ describe("WordCalculator Tests", function(){
 		wordCalculator = $injector.get("wordCalculator");
 	}));
 
-	it("calculate d should return $.01", function(){
-		// write test
-		expect(true).toBe(true);
+	it("calculate d should return $.04", function(){
+		var amount = wordCalculator.calculate('d');
+		expect(amount).toBe('$.04');
 	});
 
 	it('calculate z should return $.26', function(){
-		// write test
-		expect(true).toBe(true);
+		var amount = wordCalculator.calculate('z');
+		expect(amount).toBe('$.26');
 	});
 	
-	it('calculate ; should return error', function(){
-		// write test
-		expect(true).toBe(true);
+	it('calculate ; should return ERROR', function(){
+		var amount = wordCalculator.calculate(';');
+		expect(amount).toBe('ERROR');
 	});
 
-	//any other tests...
+	it('dollar words are persisted', function(){ 
+    var amount = wordCalculator.calculate('buzzy');
+    expect(amount).toBe('$1.00');
+  });
 
 });
